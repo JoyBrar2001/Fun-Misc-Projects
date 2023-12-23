@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    border: 0;
+    min-height: 100vh;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+}
+
+.card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+.card .front{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card:hover .front{
+    transform: translateY(0px);
+    box-shadow: 
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+    ;
+}
+
+.front .content{
+    opacity: 0.2;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover .front .content{
+    opacity: 1;
+}
+
+.card .front .content i{
+    font-size: 3rem;
+    display: inline-block;
+}
+
+.card .front .content h3{
+    font-size: 1rem;
+}
+
+.back{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-shadow: 0 20px 50px #000000cc;
+    transform: translateY(-100px);
+}
+
+.card:hover .back{
+    transform: translateY(0px);
+}
+
+.back p, .back a{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.back a{
+    color: black;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.back a:hover{
+    background: #333;
+    color: whtie;
+}
