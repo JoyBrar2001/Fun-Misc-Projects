@@ -1,14 +1,3 @@
-// const texts = document.querySelectorAll('.text');
-
-// texts.forEach((text) => {
-//     let letters = text.innerHTML;
-//     let letterArray = letters.split('');
-//     text.innerHTML = '';
-//     letterArray.filter((char) => char !== ' ').forEach((letter, index) => {
-//         text.innerHTML += `<span style="transition-delay: ${index * 0.1}">${letter}</span>`;
-//     });
-// });
-
 const links = document.querySelectorAll('.link');
 
 links.forEach((link) => {
