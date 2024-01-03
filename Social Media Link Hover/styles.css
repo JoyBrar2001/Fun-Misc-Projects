@@ -76,7 +76,14 @@ body{
     font-weight: 600;
     width: 0;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.text span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 .link:hover .text{
