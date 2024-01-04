@@ -36,5 +36,104 @@ main{
     height: 150px;
     background: #ce2ea9;
     border-radius: 50%;
-    box-shadow: 0 0 70px #ff3ad1;
+    box-shadow: 0 0 70px #ff3ad1,
+    0 0 100px #ff3ad1,
+    0 0 150px #ff3ad1,
+    0 0 200px #ff3ad1
+    ;
+    opacity: 0.5;
+}
+
+.glow1{
+    top: 0;
+    left: -60px;
+}
+.glow2{
+    top: 30%;
+    left: 25%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 100px #ff3ad1,
+    0 0 200px #ff3ad1,
+    0 0 250px #ff3ad1,
+    0 0 300px #ff3ad1
+    ;
+}
+.glow3{
+    bottom: -70px;
+    right: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.blur{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    backdrop-filter: blur(20px);
+}
+
+.dots{
+    position: absolute;
+    width: 100px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.dot1{
+    height: 200px;
+    top: 300px;
+    left: 50px;
+}
+
+.dot2{
+    height: 100px;
+    top: 12px;
+    right: 50px;
+}
+
+.dot2{
+    height: 100px;
+    bottom: 0px;
+    right: 50px;
+}
+
+.dots span{
+    width: 2px;
+    height: 2px;
+    background: #ff3ad1;
+}
+
+.border{
+    position: absolute;
+    width: 65vw;
+    height: 150px;
+    border: 1px solid #902176;
+    border-radius: 100px 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    z-index: 5;
+}
+
+.b1{
+    right: 0;
+    bottom: -1px;
+    transform: rotate(90deg);
+    transform-origin: top right;
+}
+
+.b2{
+    right: 149px;
+    bottom: 149px;
+}
+
+.b3{
+    right: 0;
+    bottom: 0px;
+    border-radius: 0;
+    width: 150px;
 }
